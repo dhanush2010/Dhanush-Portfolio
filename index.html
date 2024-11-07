@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>my profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+     <!-----start Hearder section-----> 
+     <div id="hearder"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"> 
+        <div class="contenier">
+            <nav >
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbiUyMGNvbXB1dGVyfGVufDB8fDB8fHww" alt="logo" class="logo" data-aos="zoom-in">
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#hearder" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav> 
+              <div class="hearder-text"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <p>Data Analyst</p>
+                <h1>Hi I am <span>Dhanush</span> <br> From India</h1>
+              </div>       
+            </div>
+        </div>
+     </div>
+      <!-----End Hearder section----->
+
+
+      <!-----start About section----->
+      <div id="about"data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="https://images.unsplash.com/photo-1613980790147-f4f449df0dd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbiUyMGNvbXB1dGVyfGVufDB8fDB8fHww" data-aos="zoom-in" >  
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm basicslly trained in Data Preprocessing, Analyisis, Visualiztion using the technologies like, Sql, Python, Machine Learning, Excel , PowerBI etc.... I'm a great addition to your analysis team and output prediction and so on.</p>
+                   <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                    <ul>
+                        <li><span>SQL</span><br>Data Preprocessing</li>
+                        <li><span>Machine Learning</span><br>Data Analyisis And Visualiztion</li>
+                        <li><span>Excel and Power BI</span><br>Data Preprocessing And Visualiztion</li>
+                        <li><span>Python</span><br>Proficient in Data Science Libraries and Exploitary Data Analyisis (EDA)</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>Fresher</span></li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BCA - Artificaial Intelligence and Data Science</span><br>DR.MGR UNIVERSITY</li>
+                    </ul>
+                    <ul>
+                        <li><span>Masters in Data Analyisis</span><br>I.T.Vedant</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+
+
+      <!-----Service section Start----->
+     <div id="services" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+        <div class="contenier" >
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div data-aos="fade-right">
+                    <img src="C:\Users\HP\Pictures\SQL.png">
+                    <h2>SQL</h2>
+                    <p>Data Preprocessing</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="flip-up">
+                    <img src="C:\Users\HP\Pictures\ML.png" >
+                    <h2>Machine Learing using Python</h2>
+                    <p>Data Analyisis And Visualiztion</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="C:\Users\HP\Pictures\Excel And PowerBI.png" >
+                    <h2>Excel And Power BI</h2>
+                    <p>Data Preprocessing And Visualiztion</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+      <!----services section end ----->
+
+
+        <!----portfolio section Start ----->
+
+        <div id="portfolio">
+            <div class="contenier">
+                <h1 class="sub-title">My Repositories</h1>
+                <p>These are the my project based on Analysis and Visualiztion</p>
+                <div class="work-list" >
+                    <div class="work" data-aos="zoom-in">
+                        <img src="C:\Users\HP\Pictures\imdb.png" >
+                        <div class="layer">
+                            <h3>Visualiztion Using PowerBI</h3>
+                            <p>Data Visualiztionusing power BI on dataset provided by IMDB Movies list.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="C:\Users\HP\Pictures\sales.png" >
+                        <div class="layer">
+                            <h3>Preprocessing Using SQL</h3>
+                            <p>Preprocessing and analysis done based on Sales data.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="C:\Users\HP\Pictures\png-transparanalysis.png" >
+                        <div class="layer">
+                            <h3>Analysis and prediction using Machine Learning</h3>
+                            <p>Preprocessing, Analysis, Visualiztion done using machine learning</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+                <a href="" class="btn">Learn More</a>
+
+            </div>
+        </div>
+         <!----portfolio section End ----->
+
+
+          <!----Contact section Start ----->
+          <div id="contact"  >
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left"  data-aos="fade-up-right">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>dh048377@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>861048723</p>
+                        <div class="social-icons" data-aos="zoom-in">
+            
+                            <a target="_blank" class="instagram" href=""><i class="dhanush_._20 -instagram"></i></a>
+                            <a target="_blank" class="github" href=""><i class="https://github.com/-github"></i></a>
+                            <a target="_blank" class="linkedin" href=""><i class="https://www.linkedin.com/feed/-linkedin"></i></a>
+                        </div>
+                        <a href="" class="btn btn2">View Resume</a>
+
+                    </div>
+                    <div class="contact-right" data-aos="fade-up-left">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Website Developed By <span style="color: rgb(224, 44, 44);">Dhanush</span></p>
+            </div>
+          </div>
+   
+          <!----Contact section End ----->
+          <script>
+            var preloader = document.getElementById("Loading");
+            function loader(){
+              preloader.style.display = 'none';
+            }
+          </script>
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+      
+    <!-- aos data  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 900,
+        });
+      </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right ="0";
+        }
+        function closemenu(){
+            sidmenu.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
